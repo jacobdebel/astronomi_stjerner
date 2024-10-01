@@ -1,0 +1,795 @@
+#+title: Stjerner
+#+subtitle: 
+#+author: Astronomi C & Fysik B
+#+date: Jacob Debel
+# Themes: beige|black|blood|league|moon|night|serif|simple|sky|solarized|white
+#+reveal_theme: night
+#+reveal_title_slide: <h2>%t</h2><h3>%s</h3><h4>%a</h4><h4>%d</h4>
+#+reveal_title_slide_background: ./img/stars_background.jpg 
+#+reveal_default_slide_background: ./img/stars_background.jpg
+#+reveal_extra_options: slideNumber:"c/t",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true
+#+options: toc:nil num:nil tags:nil timestamp:nil ^:{}
+
+
+* Introduktion
+
+** Hvad ved I allerede?
+#+attr_reveal: :frag (appear)
+- Størrelsesklasser: Visuel og absolut $M = m - 5 \cdot \log \left( \frac{r}{10 pc} \right)$
+- Planckkurver
+- Spektre og spektralanalyse
+- Spektralklasser: O B A F G K M
+- Luminositet: $L = 4 \pi R^2 \cdot \sigma T^4$
+- $\frac{L_A}{L_B} = \left( \frac{R_A}{R_B} \right)^2 \cdot \left( \frac{T_A}{T_B} \right)^4$
+
+** En introducerende video
+
+#+reveal_html: <div style="font-size: 60%;">
+
+#+begin_export html
+<iframe width="600" height="400" src="https://www.youtube.com/embed/ld75W1dz-h0?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+Linket er: https://youtu.be/ld75W1dz-h0?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL
+
+* Stjerneevolution
+** De fire stadier
+
+|-------------------+-------------------------------------------------------|
+| Evolutionsfase    | Energikilde                                           |
+|-------------------+-------------------------------------------------------|
+| Stjernedannelse   | Gravitationsenergi                                    |
+| Hovedseriefasen   | Fusion af brint til helium                            |
+| Kæmpestjernefasen | Fusion af helium til tungere grundstoffer op til jern |
+| Stjernedød        | Gravitationsenergi/termisk energi                     |
+|-------------------+-------------------------------------------------------|
+
+** Stjerneudvikling for lette stjerner
+#+reveal_html: <div style="font-size: 60%;">
+En lille videoforsmag.
+
+#+begin_export html
+<iframe width="600" height="400" src="https://www.youtube.com/embed/jfvMtCHv1q4?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+Linket er: https://youtu.be/jfvMtCHv1q4?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL
+
+* Stjernedannelse 
+Gravitationsenergi
+
+** Ørnetågen (M16)
+#+reveal_html: <div style="font-size: 60%;">
+Pillars of creation
+#+attr_html: :width 600px
+[[file:img/2021-10-25_12-38-05_screenshot.png]]
+
+Den venstre søjle er ca. 4 ly høj.
+
+** Oriontågen (M42)
+#+reveal_html: <div style="font-size: 60%;">
+#+attr_html: :height 500px
+[[file:img/2021-10-25_21-32-16_screenshot.png]]
+
+ca 24 ly bred og ca 2000 $M_\odot$
+
+
+** Sammentrækning af en gassky
+#+reveal_html: <div style="font-size: 60%;">
+
+- Store (som i virkelig store) gasskyer af brint, helium (og meget små mængder af molekyler) trækker sig sammen pga tyngdekraften.
+  
+#+begin_export html
+<iframe width="600" height="400" src="https://www.youtube.com/embed/Qk0ff_zREMI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+Linket er: https://youtu.be/Qk0ff_zREMI
+
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+- Når en stor kold gassky trækker sig sammen stiger temperaturen.
+
+#+begin_export html
+<iframe src="https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties_da.html"
+        width="600"
+        height="400"
+        allowfullscreen>
+</iframe>
+#+end_export
+- Temperaturen stiger hurtigt fra nogle få grader over det absolutte nulpunkt til flere tusinde grader.
+- Temperaturstigningen vil bremse sammentrækningen.
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+- Kun brint (og helium) ingen yderligere sammentrækning
+- og dermed ingen stjernedannelse
+- pga *hydrostatisk ligevægt*
+
+#+attr_html: :height 500px
+[[file:img/2021-10-25_22-25-12_screenshot.png]]
+ 
+** Molekyler i gasskyen
+#+reveal_html: <div style="font-size: 60%;">
+- Gasskyen trækker sig sammen.
+- De store molekyler støder sammen, optager energi, bliver varme og begynder at vibrere.
+- Udsender stråling i IR og $\mu$ m-området.
+- Gasskyen slipper derfor af med *noget* af varmen, og kan trække sig yderligere sammen.
+- Centrum kan nu blive meget varm, og fusionsprocesser kan nu opstå i kernen.
+- Nu er stjernen født!
+
+** Hvor kommer energien fra?
+#+reveal_html: <div style="font-size: 60%;">
+Kan forklares med *virialteoremet*.
+
+$$\boxed{2 \cdot \left\langle E_\text{kin} \right\rangle + \left\langle E_\text{pot} \right\rangle = 0\,.}$$
+
+$\left\langle E_\text{pot} \right\rangle$ er *ikke* den traditionelle potentielle energi mellem to legemer, men en egenenergi et legeme (en gassky i dette tilfælde) har blot i kraft af sin egen masse.
+
+For en uendeligt stor sky, som har trukket sig sammen til en kugle med radius $R$ er den potentielle egenenergi givet ved
+$$\left\langle E_\text{pot} \right\rangle = - \frac{3}{5}\cdot \frac{G M^2}{R}$$
+
+*Halvdelen af energien går til opvarmning af skyen, mens den anden halvdel forlader skyen som strålingsenergi.*
+
+** Solens alder pba. gravitation alene
+#+reveal_html: <div style="font-size: 60%;">
+Beregn Solens anslåede alder, hvis frigivet potentiel energi alene skal drive energiproduktionen. Brug formlerne
+
+$$E_\text{stråling} = \frac{3}{10}\cdot \frac{G M^2}{R}$$
+
+og
+
+$$t = \frac{E_\text{stråling}}{L_\odot} = \frac{\frac{3}{10}\cdot \frac{G M^2}{R}}{L_\odot}=?$$
+
+Se en nærmere forklaring i dokumentet om virialteoremet.
+
+** Opgave 8
+
+#+DOWNLOADED: screenshot @ 2019-11-04 13:08:23
+#+attr_html: :width 700px
+#+attr_latex: :width 10cm
+[[./img/2019-11-04_13-08-23_screenshot.png]]
+
+Se side 39 i kompendiet om stjerner.
+
+* Hovedseriefasen
+Fusion af brint til helium.
+** NGC 604
+
+#+attr_html: :height 500px
+[[file:img/2021-10-30_18-01-58_screenshot.png]]
+
+** Fusion af brint til helium
+#+reveal_html: <div style="font-size: 60%;">
+
+#+begin_export html
+<iframe width="600" height="400" src="https://www.youtube.com/embed/qj-LePbYzSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+Linket er: https://youtu.be/qj-LePbYzSY
+
+#+reveal: split
+- Fusion af brint til helium (pp-proces).
+- Kan begynde, når kernetemperaturen er over ca. $10\cdot 10^6$ K.
+\begin{align*}
+1. fase &: {}_1^1 H + {}_1^1 H \to {}_1^2 H + e^+ + \nu_e \\
+2. fase &: {}_1^2 H + {}_1^1 H \to {}_2^3 He + \gamma  \\
+3. fase &: {}_2^3 He + {}_2^3 He \to {}_2^4 He + {}_1^1 H + {}_1^1 H
+\end{align*}
+
+#+reveal: split
+1. fase: En af protonerne omdannes til en neutron vha den svage kernekraft. *Det tager laang tid!*
+#+attr_html: :width 400px
+#+attr_latex: :width 10cm
+[[file:img/2019-11-04_12-31-12_screenshot.png]]
+
+#+reveal: split
+2. [@2] fase: Deuteriumkernen sættes sammen med en proton og danner Helium-3.
+   - Foregår via den stærke kernekraft. *Det går lynende hurtigt ift fase 1.*
+
+#+reveal: split
+3. [@3] fase: To Helium-3-kerner smelter sammen, men den elektriske frastødning sender to protoner ud igen.
+   
+#+reveal: split
+Overblik
+
+#+DOWNLOADED: screenshot @ 2019-11-04 12:40:41
+#+attr_html: :width 600px
+#+attr_latex: :width 10cm
+[[file:img/2019-11-04_12-40-41_screenshot.png]]
+
+#+reveal: split
+Overblik
+
+#+DOWNLOADED: screenshot @ 2019-11-04 12:43:31
+#+attr_html: :width 300px
+#+attr_latex: :width 10cm
+[[file:img/2019-11-04_12-43-31_screenshot.png]]
+
+** Opgave - Solens energiproduktion
+#+reveal_html: <div style="font-size: 60%;">
+Se dokumentet =Opgave_Solens_energiproduktion.pdf=
+#+attr_html: :width 300px
+[[file:img/2021-11-01_14-54-34_screenshot.png]]
+
+** Ny hydrostatisk ligevægt
+#+reveal_html: <div style="font-size: 60%;">
+- Gastryk *og strålingstryk* for fusionsprocesserne balancerer tyngdekraften.
+- Meget stabilt.
+- Mindre fusion -> sammentrækning -> højere temp -> mere fusion.
+- Mere fusion -> gasskyen ekspanderer -> lavere temp -> mindre fusion.
+
+#+attr_html: :height 400px
+[[file:img/2021-10-30_18-18-18_screenshot.png]]
+
+** Solens opbygning
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+#+attr_html: :width 600px
+[[file:img/2021-11-01_10-21-54_screenshot.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+attr_latex: :width 7cm
+[[file:img/2021-11-01_10-22-21_screenshot.png]]
+#+reveal_html: </div>
+
+** Solen svulmer op
+#+reveal_html: <div style="font-size: 60%;">
+#+attr_reveal: :frag (appear)
+- Brint omdannes til helium.
+- kernens densitet forøges.
+- Kernen trækker sig dermed sammen.
+- Temperaturen stiger.
+- De ydre lag bliver varmere og udvider sig.
+- De varmere ydre lag udsender mere stråling.
+- Luminositeten stiger altså løbende pga større overflade og højere temp.
+- For nuværende er Solens luminositet vokset med ca. 40 %.
+
+#+reveal: split
+#+begin_export html
+<iframe width="800" height="600" src="https://www.youtube.com/embed/I0Oc54rloE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+** CNO-cyklussen
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- For større og (dermed) varmere stjerner, findes der andre fusionsprocesser også.
+- En af dem er CNO-cyklussen.
+- Starter ved ca. $15 \cdot 10^6$ K.
+
+#+attr_html: :width 600px
+[[./img/Nuclear_energy_generation.svg.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+attr_html: :height 500px
+[[file:img/2021-11-01_10-42-08_screenshot.png]]
+#+reveal_html: </div>
+
+** Levetid på hovedserien
+#+reveal_html: <div style="font-size: 60%;">
+Levetiden for en stjerne på hovedserien kan beregnes vha. formlen.
+
+$$\boxed{t = t_\odot \cdot \frac{\frac{M}{M_\odot}}{\frac{L}{L_\odot}} = t_{\odot}\cdot \frac{M}{M_{\odot}}\cdot \frac{L_{\odot}}{L}}$$
+
+\begin{align*}
+t_{\odot} &\sim 10 \cdot 10^9 \text{ år} \\
+M_{\odot} &= 1.989\cdot 10^{30} \text{ kg} \approx 2\cdot 10^{30} \text{ kg} \\
+R_{\odot} &= 6.96 \cdot 10^8 \text{ m} \\
+L_{\odot} &= 3.90 \cdot 10^{26} \text{ W} \\
+T_{\odot} &= 5 800 \text{ K} \\
+\frac{L}{L_{\odot}} &= \left( \frac{R}{R_{\odot}} \right)^2\cdot \left( \frac{T}{T_{\odot}} \right)^4 \\
+L &= 4 \pi R^2 \cdot \sigma \cdot T^4 
+\end{align*}
+
+** Opgave om levetider
+#+reveal_html: <div style="font-size: 60%;">
+1. Beregn levetiderne på hovedserien for følgende stjerner (Find selv oplysninger):
+   - Sirius A
+   - BI 253
+   - 61 Cygni A
+2. Sæt levetiderne for stjernerne i perspektiv ift. Universets og Jordens udviklingen.
+
+* Kæmpestjernefasen
+Fusion til tungere grundstoffer
+** Betelgeuse
+
+#+attr_html: :height 500px
+[[file:img/2021-11-01_11-39-57_screenshot.png]]
+
+** Fusion af helium til kulstof og tungere grundstoffer
+#+reveal_html: <div style="font-size: 60%;">
+- Begyndelsen på enden.
+- Ikke nok brint tilbage.
+- Gravitation overtager og kernen trækker sig sammen.
+- Temperaturen stiger i kernen og på overfladen.
+- Stjernen udvider sig meget.
+- Fusion af tungere grundstoffer. 
+- Løgstruktur.
+  
+** Triple $\alpha$​-processen
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 60%">
+\begin{align*}
+{}_2^4 He + {}_2^4 He &\to {}_4^8 Be \\
+{}_4^8 Be + {}_2^4 He &\to {}_6^{12} C + 2 \gamma 
+\end{align*}
+
+- Berylium-8 er meget ustabil, og skal nå at fusionere med en heliumkerne/alfepartikel meget hurtigt.
+- Der produceres en karbon-12-kerne, som er i en exciteret tilstand.
+- Denne henfalder typisk tilbage til tre alfapartikler.
+- Der er ca. $\frac{1}{2421.3}$ chance for at karbon-12-kernen falder tilbage til grundstanden og udsender ståling ($\gamma$).
+- Forløber ved ca $10^8$ K (100 mio kelvin).
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 40%">
+#+attr_html: :width 600px
+[[file:img/2021-11-01_12-03-02_screenshot.png]]
+#+reveal_html: </div>
+
+** Løgstruktur for små stjerner (som Solen)
+
+#+attr_html: :width 500px
+[[file:img/2019-11-04_13-02-41_screenshot.png]]
+
+** Løgstruktur for store stjerner
+
+#+attr_html: :width 500px
+[[file:img/2021-01-20_20-18-51_screenshot.png]]
+
+#+reveal: split
+Hvorfor stopper det ved jern i kernen?
+
+** Bindingsenergi pr. nukleon
+
+#+attr_html: :height 400px
+[[file:img/2021-11-01_12-17-52_screenshot.png]]
+
+** Opgave 9
+
+#+DOWNLOADED: screenshot @ 2019-11-04 13:09:37
+#+attr_html: :width 600px
+#+attr_latex: :width 10cm
+[[file:img/2019-11-04_13-09-37_screenshot.png]]
+
+Se side 39 i kompendiet om stjerner.
+
+* Stjernedød
+Gravitationsenergi og termisk energi.
+   
+- Det hele afhænger af stjernens oprindelige størrelse.
+  
+
+#+DOWNLOADED: screenshot @ 2019-11-04 13:05:21
+#+attr_html: :width 500px
+#+attr_latex: :width 10cm
+#+attr_org: :width 100px
+[[file:img/2019-11-04_13-05-21_screenshot.png]]
+
+  
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">   
+
+#+begin_export html
+<iframe width="600" height="400" src="https://www.youtube.com/embed/yi4WHtG03BU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+Linket er: https://youtu.be/yi4WHtG03BU
+
+** "Små" stjerners død
+#+reveal_html: <div style="font-size: 60%;">
+   
+#+begin_export html
+<iframe width="600" height="400" src="https://www.youtube.com/embed/Mj06h8BeeOA?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+Linket er: https://youtu.be/Mj06h8BeeOA?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL
+
+** Sirius B
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Sirius B er et eksempel på en hvid dværg.
+- Sirius A og B var oprindeligt et binært stjernesystem, hvor B var den største.
+- Sirius B havde et evolutionsforløb som beskrevet for små stjerner.
+
+  
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+
+
+#+DOWNLOADED: https://upload.wikimedia.org/wikipedia/commons/f/f3/Sirius_A_and_B_Hubble_photo.jpg @ 2021-01-20 22:13:05
+#+attr_html: :height 250px
+#+attr_latex: :width 7cm
+[[file:img/2021-01-20_22-13-05_Sirius_A_and_B_Hubble_photo.jpg]]
+
+#+DOWNLOADED: https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Sirius_B-Earth_comparison2.png/330px-Sirius_B-Earth_comparison2.png @ 2021-01-20 22:01:58
+#+attr_html: :height 200px
+#+attr_latex: :width 7cm
+[[file:img/2021-01-20_22-01-58_330px-Sirius_B-Earth_comparison2.png]]
+#+reveal_html: </div>
+
+** Hvide dværge
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+#+attr_reveal: :frag (appear)
+- Hvid dværge er de inaktive stjernerester, der er tilbage, når stjerner med $M< 10 M_{\odot}$ dør.
+- Når fusionsprocesserne ophører, ophører også det udadrettede strålingstryk, og der er kun gravitation tilbage.
+- *Hvad standser gravitationens sammentrækning, så der faktisk er en hvid dværg tilbage?*
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+DOWNLOADED: https://www.e-education.psu.edu/astro801/sites/www.e-education.psu.edu.astro801/files/image/hs-1999-01-a-large_web.jpg @ 2021-01-20 22:22:09
+#+attr_html: :width 600px
+#+attr_latex: :width 7cm
+[[file:img/2021-01-20_22-22-09_hs-1999-01-a-large_web.jpg]]
+Ringnebulaen.
+#+reveal_html: </div>
+*** Svaret er...
+#+reveal_html: <div style="font-size: 60%;">
+#+attr_reveal: :frag (appear)
+*Elektron-degeneration*
+#+attr_reveal: :frag (appear)
+#+attr_html: :width 500px
+#+attr_latex: :width 7cm
+[[file:img/2021-01-20_22-33-21_maxresdefault.jpg]]
+#+attr_reveal: :frag (appear)
+Beror på *Paulis eksklusionsprincip* fra *kvantemekanikken*.
+#+attr_reveal: :frag (appear)
+Hvis $M_\text{hvid dværg} > 1.44 M_\odot$ (Chandrasekhargrænsen) overstiger gravitationen dog elektrondegenerationstrykket.
+
+*** Paulis eksklusionsprincip
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- To eller flere /identiske/ fermioner (her elektroner) med de samme kvantetal kan ikke være i samme kvantetilstand i kvantesystemet på samme tid.
+- Eller to elektroner kan ikke have samme sæt af kvantetal.
+- Derfor opstår orbitalerne og skallerne i atomerne.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+DOWNLOADED: https://www.chemicool.com/images/electron-configuration-argon.png @ 2021-01-20 22:50:44
+#+attr_html: :height 400px
+#+attr_latex: :width 7cm
+[[file:img/2021-01-20_22-50-44_electron-configuration-argon.png]]
+#+reveal_html: </div>
+
+#+reveal: split
+Se mere her: [[http://video.ku.dk/paulis-eksklusionsprincip]]
+
+Fun fact: Jan Philip Solovej var min egen forelæser til mat 1 og lineær algebra på min tid på universitetet.
+
+** Store stjerners død
+#+reveal_html: <div style="font-size: 60%;">
+
+#+begin_export html
+<iframe width="600" height="400" src="https://www.youtube.com/embed/PWx9DurgPn8?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+Linket er: https://youtu.be/PWx9DurgPn8?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL
+
+** Neutronstjerner
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- De centrale dele efter en supernovaeksplosion for stjerner med $10 M_\odot < M < 25 M_\odot$ 
+- Elektrondegenerationstrykket overvindes af gravitationen.
+- Elektronerne bliver /presset/ sammen med atomkernernes protoner, og danner neutroner via /elektronindfangning/.
+- Neutronstjerner har radier i størrelsesordnen 10 km og masser lidt over $1.4 M_{\odot}$.
+#+attr_reveal: :frag (appear)
+- Hvad forhindre neutronstjerner i at kollapse?
+- *Neutrondegenerationstrykket* bl.a. (igen Paulis eksklusionsprincip).
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+DOWNLOADED: screenshot @ 2019-11-04 13:05:21
+#+attr_html: :width 500px
+#+attr_latex: :width 10cm
+#+attr_org: :width 100px
+[[file:img/2019-11-04_13-05-21_screenshot.png]]
+#+reveal_html: </div>
+
+*** Elektronindfangning
+#+reveal_html: <div style="font-size: 60%;">
+Reaktion
+
+$$p + e^- \to n + \nu_e$$
+
+Eller på kvarkniveau
+#+DOWNLOADED: https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Electron-capture.svg/464px-Electron-capture.svg.png @ 2021-01-20 23:57:27
+#+attr_html: :width 500px
+#+attr_latex: :width 7cm
+[[file:img/2021-01-20_23-57-27_464px-Electron-capture.svg.png]]
+
+Kaldes undertiden også for /omvendt/ beta-henfald.
+
+*** Neutronstjerner
+#+begin_export html
+<iframe width="600" height="400" src="https://www.youtube.com/embed/RrMvUL8HFlM?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+Linket er: https://youtu.be/RrMvUL8HFlM?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL
+
+*** Lidt mere om neutronstjerner og pulsarer
+#+begin_export html
+<iframe width="600" height="400" src="https://www.youtube.com/embed/oLoLey75i2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+Linket er: https://youtu.be/oLoLey75i2k
+
+** Sorte huller
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+#+attr_reveal: :frag (appear)
+- Opstår når massen af stjerneresten efter en supernovaeksplosion overstiger 2-3 $M_{\odot}$
+- Intet kan nu balancere gravitationen, og stjerneresten imploderer på sig selv.
+- Tyngdefeltet bliver så stort, at /undvigelseshastigheden/ overstiger lysets hastighed i vakuum.
+- Selv lys kan ikke undslippe!
+- Størrelsen af et sort hul beskrives ofte vha dets /Schwarzschildradius/: $$R_s = \frac{2GM}{c^2}$$
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+DOWNLOADED: https://fastly.syfy.com/sites/syfy/files/blackhole_sim_hero.jpg @ 2021-01-21 00:02:51
+#+attr_html: :height 200px
+#+attr_latex: :width 7cm
+[[file:img/2021-01-21_00-02-51_blackhole_sim_hero.jpg]]
+
+
+#+DOWNLOADED: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Black_Holes_-_Monsters_in_Space.jpg/420px-Black_Holes_-_Monsters_in_Space.jpg @ 2021-01-21 00:04:33
+#+attr_html: :height 200px
+#+attr_latex: :width 7cm
+[[file:img/2021-01-21_00-04-33_420px-Black_Holes_-_Monsters_in_Space.jpg]]
+#+reveal_html: </div>
+
+*** Opgave om sorte huller
+
+#+DOWNLOADED: screenshot @ 2021-01-21 00:49:25
+#+attr_html: :height 600px
+#+attr_latex: :width 7cm
+[[file:img/2021-01-21_00-49-25_screenshot.png]]
+
+*** Sorte huller
+#+begin_export html
+<iframe width="600" height="400" src="https://www.youtube.com/embed/qZWPBKULkdQ?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+Linket er: https://youtu.be/qZWPBKULkdQ?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL
+
+* HR-diagrammet
+** Opbygning
+#+reveal_html: <div style="font-size: 60%;">
+
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+#+DOWNLOADED: screenshot @ 2019-11-04 10:31:37
+#+attr_html: :width 500px
+#+attr_latex: :width 10cm
+[[file:img/2019-11-04_10-31-37_screenshot.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+- Mange forskellige enheder på akserne
+- "x"-aksen:
+  - *Spektralklasser*: OBAFGKM
+  - *Farveindeks* (Mere om det senere)
+  - *Overfladetemperatur* (stiger mod venstre!)
+- "y"-aksen:
+  - *Luminositet*, enten i watt eller i enheder af Solluminositeter. Logaritmisk.
+  - *Absolut størrelsesklasse* (nogen gange også visuel, stiger nedad! Mere om det senere.)
+#+reveal_html: </div>
+
+
+** Opgave 10
+
+#+DOWNLOADED: screenshot @ 2019-11-04 11:13:56
+#+attr_html: :width 600px
+#+attr_latex: :width 10cm
+#+attr_org: :width 100px
+[[file:img/2019-11-04_11-13-56_screenshot.png]]
+
+Se side 40 i kompendiet om stjerner.
+
+** Stjerneudvikling i HR
+- Skitsér selv HR-diagram på et stykke papir.
+  - Hvad er det nu, der skal være på x- og y-aksen?
+- Indtegn de fire stadier i en let stjernes udvikling
+  - Stjernedannelse
+  - Hovedseriefase
+  - Kæmpestjernefase
+  - Stjernedød
+    
+#+reveal: split
+
+#+DOWNLOADED: screenshot @ 2019-11-04 10:42:19
+#+attr_html: :width 500px
+#+attr_latex: :width 10cm
+[[file:img/2019-11-04_10-42-19_screenshot.png]]
+
+#+reveal: split
+
+#+DOWNLOADED: screenshot @ 2019-11-04 11:20:24
+#+attr_html: :width 600px
+#+attr_latex: :width 10cm
+#+attr_org: :width 100px
+[[file:img/2019-11-04_11-20-24_screenshot.png]]
+
+# ** Opgave 11
+
+# #+DOWNLOADED: screenshot @ 2019-11-04 11:14:47
+# #+attr_html: :width 600px
+# #+attr_latex: :width 10cm
+# #+attr_org: :width 100px
+# [[file:img/2019-11-04_11-14-47_screenshot.png]]
+
+# Se side 40 i kompendiet om stjerner.
+
+* 
+
+#+attr_html: :height 600px
+[[file:img/2021-11-07_20-49-57_screenshot.png]]
+
+** To stjernehobe
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+Plejaderne/Syvstjernen.
+
+En /åben/ hob.
+
+#+attr_html: :width 400px
+[[./img/plejaderne.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+47 Tuc (NGC 104).
+
+En /kuglehob/.
+
+#+attr_html: :width 400px
+[[./img/47tuc.png]]
+
+#+reveal_html: </div>
+
+** UBV-fotometri og farveindeks
+Man sætter forskellige filtre foran teleskopet, som kun lukker udvalgte bølgelængder igennem.
+
+#+attr_html: :width 600px
+[[file:img/2021-11-07_17-16-10_screenshot.png]]
+
+#+reveal: split
+#+reveal_html: <div style="font-size: 50%;">
+|--------+-------------+---------------------------+-----------------|
+| Filter | Område      | Effektiv bølgelængde [nm] | Båndbredde [nm] |
+|--------+-------------+---------------------------+-----------------|
+| U      | Ultraviolet |                       365 |              70 |
+| B      | Blåt        |                       440 |             100 |
+| V      | Visuelt     |                       550 |              90 |
+| R      | Rødt        |                       640 |             150 |
+| I      | Infrarødt   |                       790 |             150 |
+|--------+-------------+---------------------------+-----------------|
+
+#+attr_html: :width 500px
+[[file:img/2021-11-04_14-30-36_screenshot.png]]
+
+Filtrenes navne står også for den tilsyneladende størrelsesklasse set igennen filtret. F.eks. $B= m_B$.
+
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Ved at trække to størrelsesklasser med forskellige filtre fra hinanden, kan man skelne varme og kolde stjerner fra hinanden.
+
+- Typisk anvender man *farveindekset* $\left( B -V \right)$.
+
+#+attr_html: :width 400px
+[[file:img/2021-11-05_08-18-40_screenshot.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+- Der er en klar sammenhæng mellem farveindekset (nogen gange bare kaldet farven) og temperaturen.
+
+#+attr_html: :width 400px
+[[file:img/2021-11-05_09-39-26_screenshot.png]]
+#+reveal_html: </div>
+
+#+reveal: split
+#+reveal_html: <div style="font-size: 60%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Farveindekset $B-V = 0$ er kalibreret til en temp på 10 000 K.
+- Bl.a. efter stjernen Vega i Lyren.
+- Lavt farveindeks (og sågar negativt) betyder varm stjerne.
+- Højt farveindeks betyder kold stjerne.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+|----------------------+---------+----------+-------|
+| Stjerne              | Farve   | Temp [K] |   B-V |
+|----------------------+---------+----------+-------|
+| Rigel                | Blå     |    20000 | -0.24 |
+| Vega, Sirius         | Hvide   |    10000 |  0.00 |
+| Canupus              | Hvidgul |     7000 |  0.35 |
+| Solen, Alfa Centauri | Gule    |     6000 |  0.65 |
+| Aldebaran            | Rød     |     4000 |  1.20 |
+| Betelgeuse           | Rød     |     3000 |  1.70 |
+|----------------------+---------+----------+-------|
+#+reveal_html: </div>
+
+** Farve-størrelsesklassediagram
+#+reveal_html: <div style="font-size: 50%;">
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+- Kaldes også et CMD (Color Magnitude Diagram på engelsk)
+- Farveindekset (B-V) på x-aksen.
+- Hvis man kender afstanden til en stjerne, så plotter man den absolutte størrelsesklasse inden for det visuelle filter langs y-aksen.
+- Hvis man studerer stjernehobe kan man nøjes med at  plotte V langs y-aksen.
+- y-aksen vokser nedad!
+- Det er meget nemmere at tage to billeder med to forskellige filtre end at finde spektrummerne for en masse stjerner i en stjernehob og måle/beregne deres individuelle luminositeter.
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+#+attr_html: :width 400px
+[[file:img/2019-11-04_10-31-37_screenshot.png]]
+#+reveal_html: </div>
+
+** 
+#+reveal_html: <div style="font-size: 60%;">
+Nu er det jeres tur til at arbejde. :)
+
+#+attr_html: :height 600px
+[[file:img/2021-11-07_20-49-57_screenshot.png]]
+
+# ** Aldersbestemmelse af stjernehobe
+# - En stjernehob er en tæt samling af stjerner.
+# #+reveal: split
+# #+reveal_html: <div class="column" style="float:left; width: 50%">
+# #+DOWNLOADED: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pleiades_large.jpg/1024px-Pleiades_large.jpg @ 2019-11-04 10:49:12
+# #+attr_html: :width 600px
+# #+attr_latex: :width 10cm
+# [[file:img/2019-11-04_10-49-12_1024px-Pleiades_large.jpg]]
+# #+reveal_html: </div>
+
+# #+reveal_html: <div class="column" style="float:right; width: 50%">
+# - Plejaderne (syvstjernen)
+# - En *åben* stjernehob (unge stjerner)
+# #+reveal_html: </div>
+
+# #+reveal: split
+# #+reveal_html: <div class="column" style="float:left; width: 50%">
+# #+DOWNLOADED: https://cdn.mos.cms.futurecdn.net/baiPdB7ESdVKYDLL2RCVtD-650-80.jpg @ 2019-11-04 10:54:36
+# #+attr_html: :width 400px
+# #+attr_latex: :width 10cm
+# [[file:img/2019-11-04_10-54-36_baiPdB7ESdVKYDLL2RCVtD-650-80.jpg]]
+# #+reveal_html: </div>
+
+# #+reveal_html: <div class="column" style="float:right; width: 50%">
+# - M22
+# - En *kuglehob* (globular cluster) (gamle stjerner)
+# #+reveal_html: </div>
+
+
+# #+reveal: split
+
+# Fælles for alle hobe:
+# - Afstanden til Jorden antages at være den samme for alle stjernerne.
+# - Alderen af alle stjernerne antages også at være den samme.
+# - Størrelsen af stjernerne behøver dog *ikke* at være den samme.
+
+# #+reveal: split
+# #+DOWNLOADED: screenshot @ 2019-11-04 11:04:08
+# #+attr_html: :width 700px
+# #+attr_latex: :width 10cm
+# [[file:img/2019-11-04_11-04-08_screenshot.png]]
+# - Ung og gammel. Hvilken er hvad?
+  
+# #+reveal: split
+
+# #+DOWNLOADED: screenshot @ 2019-11-04 11:06:26
+# #+attr_html: :width 700px
+# #+attr_latex: :width 10cm
+# [[file:img/2019-11-04_11-06-26_screenshot.png]]
+
+# #+reveal: split
+
+# #+reveal_html: <div class="column" style="float:left; width: 50%">
+# #+DOWNLOADED: screenshot @ 2019-11-04 11:06:26
+# #+attr_html: :width 700px
+# #+attr_latex: :width 10cm
+# [[file:img/2019-11-04_11-06-26_screenshot.png]]
+# #+reveal_html: </div>
+
+# #+reveal_html: <div class="column" style="float:right; width: 50%">
+# - Hvornår slår stjernerne væk fra hovedserien?
+# - B-stjerner - 50 millioner år
+# - G-stjerner - 10 milliarder år
+# #+reveal_html: </div>
