@@ -7,9 +7,8 @@
 #+reveal_title_slide: <h2>%t</h2><h3>%s</h3><h4>%a</h4><h4>%d</h4>
 #+reveal_title_slide_background: ./img/stars_background.jpg 
 #+reveal_default_slide_background: ./img/stars_background.jpg
-#+reveal_extra_options: slideNumber:"c/t",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true
+#+reveal_extra_options: slideNumber:"c",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true
 #+options: toc:nil num:nil tags:nil timestamp:nil ^:{}
-
 
 * Introduktion
 
@@ -572,7 +571,6 @@ Linket er: https://youtu.be/qZWPBKULkdQ?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL
   - *Absolut størrelsesklasse* (nogen gange også visuel, stiger nedad! Mere om det senere.)
 #+reveal_html: </div>
 
-
 ** Opgave 10
 
 #+DOWNLOADED: screenshot @ 2019-11-04 11:13:56
@@ -617,10 +615,10 @@ Se side 40 i kompendiet om stjerner.
 
 # Se side 40 i kompendiet om stjerner.
 
-* 
+* Stjernehobe
 
-#+attr_html: :height 600px
-[[file:img/2021-11-07_20-49-57_screenshot.png]]
+#+attr_html: :height 500px
+[[./materialer/Opgave_HR-diagrammer_og_stjernehobe.pdf][file:./img/stjernehobe_opgave_forside.png]]
 
 ** To stjernehobe
 #+reveal_html: <div style="font-size: 60%;">
@@ -722,12 +720,25 @@ Filtrenes navne står også for den tilsyneladende størrelsesklasse set igennen
 [[file:img/2019-11-04_10-31-37_screenshot.png]]
 #+reveal_html: </div>
 
-** 
+** Jeres tur til at arbejde
 #+reveal_html: <div style="font-size: 60%;">
-Nu er det jeres tur til at arbejde. :)
 
-#+attr_html: :height 600px
-[[file:img/2021-11-07_20-49-57_screenshot.png]]
+#+reveal_html: <div style="display: grid; grid-template-columns: 50% auto;">
+#+reveal_html: <div>
+#+attr_html: :height 500px
+[[./materialer/Opgave_HR-diagrammer_og_stjernehobe.pdf][file:img/stjernehobe_opgave_forside.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div>
+- I kan downloade opgaven ved at trykke på billedet til venstre.
+- Hent de relevante datafiler (I kan nok bedst lide excel-filen).
+  - [[./materialer/HR-diagrammer_for_stjernehobe.xlsx][HR-diagrammer_for_stjernehobe.xlsx]]
+  - [[./materialer/Plejaderne.csv][Plejaderne.csv]]
+  - [[./materialer/47_tuc.csv][47_tuc.csv]]
+#+reveal_html: </div>
+#+reveal_html: </div>
+
+
 
 # ** Aldersbestemmelse af stjernehobe
 # - En stjernehob er en tæt samling af stjerner.

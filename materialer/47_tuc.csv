@@ -1,0 +1,42 @@
+# Datafil for kuglehoben 47 TUC
+# Kilde: http://www.astro.washington.edu/courses/labs/clearinghouse/labs/Clusterhr/cluster.html
+# Farveindekset er en talværdi, som angiver en stjernes farve, hvilket er mere praecist end at
+# skrive gullig eller blaagroen.
+# Smaa og endda negative vaerdier for farveindekset betyder, at stjernen er blaa/violet,
+# mens store vaerdier betyder, at stjernen er roed.
+# stjernenummer,farveindeks, visuel stoerrelsesklasse
+10012,0.72,19.5
+10170,0.94,20.5
+10200,1.01,20.9
+10206,0.92,20.9
+10278,1.19,21.5
+10335,1.27,21.9
+10359,1.19,22.1
+10489,1.29,22.5
+10610,1.41,22.9
+20028,0.49,17.5
+20034,0.54,17.6
+20049,0.53,17.9
+20070,0.56,18.3
+20104,0.61,18.7
+20130,0.65,19
+20185,0.79,19.7
+20210,0.84,20
+20239,0.89,20.3
+20335,1.06,21.3
+20364,1.16,21.5
+30014,1.06,13.4
+30103,0.78,15.4
+40002,1.41,11.9
+40022,1.21,12.5
+40043,1.11,2.8
+40130,0.95,13.9
+40135,0.65,13.9
+40144,0.75,13.9
+40164,0.55,13.9
+40351,0.81,14.8
+40628,0.69,16.1
+40821,0.69,16.5
+41051,0.66,16.8
+41107,0.54,16.9
+41456,0.47,17.1
